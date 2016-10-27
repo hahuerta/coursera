@@ -1,0 +1,45 @@
+<div class="container">
+  <h2 id="menu-categories-title" class="text-center">My Info</h2>
+  <!-- <div class="text-center">
+    Substituting white rice with brown rice or fried rice after 3:00pm will be $1.50 for a pint and $2.50 for a quart.
+  </div>
+
+  <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories"
+                 category="menuCategory">
+  </menu-category> -->
+  <div ng-if="myInfo.user.completed != true">
+    Not Signed Up Yet.
+    <a ui-sref="public.signup">
+      Sign up Now!
+    </a>
+  </div>
+  <div ng-if="myInfo.user.completed == true">
+    <div class="text-center">
+      Stored information summary
+    </div>
+    <div style="margin-top: 10px;">
+      First name: {{ myInfo.user.firstname }}
+    </div>
+
+    <div style="margin-top: 10px;">
+      Last name: {{ myInfo.user.lastname }}
+    </div>
+
+    <div style="margin-top: 10px;">
+      Email: {{ myInfo.user.email }}
+    </div>
+
+    <div style="margin-top: 10px;">
+      Phone: {{ myInfo.user.phone }}
+    </div>
+
+    <div style="margin-top: 10px;">
+      Favourite dish: {{ myInfo.user.dish }}
+    </div>
+
+    <menu-item menu-item="myInfo.menuItem">
+    </menu-item>
+
+  </div>
+
+</div>

@@ -1,0 +1,47 @@
+.loading-indicator {
+    display: block;
+    width: 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 40%;
+    z-index: 100;
+    background-color: #FFF;
+}
+
+.loading-indicator img {
+    width: 70px;
+    background-color: #FFF;
+}
+
+.ui-view-placeholder {
+    margin-top: 60px;
+}
+
+.restaurant-form input, select{
+    background-color: #222;
+    color: #FFFFFF;
+    /* TODO width in 2 bootstrap columns, one for errors */
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FFFFFF;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #FFFFFF;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #FFFFFF;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #FFFFFF;
+}
+
+.formButton {
+  color: #000000;
+}
+
+[disabled].formButton {
+  color: #FFFFFF;
+}
